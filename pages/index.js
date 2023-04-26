@@ -21,13 +21,11 @@ export default function Home() {
         </ul>
       </nav>
       <div className="px-5 md:px-10 lg:px-20">
-        <section className="flex  my-auto mx-auto mb-8">
-          <div>
+        <section className="flex my-auto mx-auto mb-8">
+          <div className="aspect-w-3 aspect-h-2">
             <Image
-              className="rounded-2xl"
+              className="shadow-lg rounded-2xl"
               src={myPic}
-              height={400}
-              width={400}
               alt="headshot"
             ></Image>
           </div>
@@ -72,8 +70,8 @@ export default function Home() {
           </div>
         </section>
         <section className="flex mb-10 my-auto mx-auto ">
-          <div className="shadow-2xl">
-            <Image src={myPic3}></Image>
+          <div className=" rounded shadow-2xl">
+            <Image alt="myPic3" src={myPic3}></Image>
           </div>
           <div className="ml-5 grid grid-cols-1 gap-1">
             <div>
@@ -89,33 +87,33 @@ export default function Home() {
             <div>
               <a
                 href="#_"
-                class="relative inline-block px-4 py-2 font-medium group"
+                className="relative inline-block px-4 py-2 font-medium group"
               >
-                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span class="relative text-black group-hover:text-white">
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
                   View the Site
                 </span>
               </a>
               <a
                 href="#_"
-                class="relative inline-block px-4 py-2 font-medium group"
+                className="relative inline-block px-4 py-2 font-medium group"
               >
-                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span class="relative text-black group-hover:text-white">
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
                   Read More
                 </span>
               </a>
             </div>
           </div>
         </section>
-        <section className="flex  my-auto mx-auto ">
+        <section className="flex mb-10 my-auto mx-auto ">
           <div className="shadow-2xl">
-            <Image src={myPic3}></Image>
+            <Image alt="myPic3" src={myPic3}></Image>
           </div>
           <div className="ml-5  grid grid-cols-1 gap-4">
-            <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
+            <h1 className="text-5xl font-extrabold pb-3">Project #2</h1>
             <p className="text-lg pb-3">
               Tech Stack: Next.JS, Tailwind, Heroku
             </p>
@@ -128,21 +126,60 @@ export default function Home() {
             <div>
               <a
                 href="#_"
-                class="relative inline-block px-4 py-2 font-medium group"
+                className="relative inline-block px-4 py-2 font-medium group"
               >
-                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span class="relative text-black group-hover:text-white">
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
                   View the Site
                 </span>
               </a>
               <a
                 href="#_"
-                class="relative inline-block px-4 py-2 font-medium group"
+                className="relative inline-block px-4 py-2 font-medium group"
               >
-                <span class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span class="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span class="relative text-black group-hover:text-white">
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
+                  Read More
+                </span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section className="flex mb-10 my-auto mx-auto ">
+          <div className=" rounded shadow-2xl">
+            <Image alt="myPic3" src={myPic3}></Image>
+          </div>
+          <div className="ml-5 grid grid-cols-1 gap-1">
+            <div>
+              <h1 className="text-5xl font-extrabold pb-3">Project #3</h1>
+              <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
+            </div>
+            <p className="text-xl pb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div>
+              <a
+                href="#_"
+                className="relative inline-block px-4 py-2 font-medium group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
+                  View the Site
+                </span>
+              </a>
+              <a
+                href="#_"
+                className="relative inline-block px-4 py-2 font-medium group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
                   Read More
                 </span>
               </a>
