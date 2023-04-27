@@ -21,21 +21,23 @@ export default function Home() {
         </ul>
       </nav>
       <div className="px-5 md:px-10 lg:px-20">
-        <section className="flex my-auto mx-auto mb-8">
-          <div className="aspect-w-3 aspect-h-2">
-            <Image
-              className="shadow-lg rounded-2xl"
-              src={myPic}
-              alt="headshot"
-            ></Image>
+        <section className="my-auto mx-auto mb-8 sm:grid lg:flex">
+          <div className=" w-full">
+            <div className="sm:aspect-w-4 sm:aspect-h-3 lg:aspect-w-16 lg:aspect-h-9 ">
+              <Image
+                className="shadow-lg rounded-2xl"
+                src={myPic}
+                alt="headshot"
+              ></Image>
+            </div>
           </div>
-          <div className="ml-5 grid grid-cols-1 gap-4">
-            <p className="text-lg">currently looking for work</p>
+          <div className="text-center lg:ml-5 lg:grid lg:grid-cols-1 lg:gap-4">
+            <p className="text-xl sm:mb-5">currently looking for work</p>
             <div>
               <h1 className="text-7xl font-extrabold">Brandon</h1>
               <h1 className="text-7xl font-extrabold">Garcia</h1>
             </div>
-            <p className="text-xl w-5/6">
+            <p className="text-xl lg:w-5/6">
               is a producct designer who can code. Passionate about learning,
               collaboration, and empowering people.
             </p>
@@ -59,9 +61,9 @@ export default function Home() {
               officia deserunt mollit anim id est laborum
             </p>
           </div>
-          <div className="">
+          <div className="hidden md:block">
             <Image
-              className="rounded-2xl "
+              className="rounded-2xl shadow-lg "
               src={myPic2}
               height={400}
               width={400}
@@ -69,11 +71,11 @@ export default function Home() {
             ></Image>
           </div>
         </section>
-        <section className="flex mb-10 my-auto mx-auto ">
+        <section className="mb-10 my-auto mx-auto  lg:flex ">
           <div className=" rounded shadow-2xl">
             <Image alt="myPic3" src={myPic3}></Image>
           </div>
-          <div className="ml-5 grid grid-cols-1 gap-1">
+          <div className="ml-5 grid lg:grid-cols-1 lg:gap-1 sm:text-center">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
               <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
@@ -108,7 +110,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex mb-10 my-auto mx-auto ">
+        <section className="mb-10 my-auto mx-auto lg:flex">
           <div className="shadow-2xl">
             <Image alt="myPic3" src={myPic3}></Image>
           </div>
@@ -147,7 +149,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex mb-10 my-auto mx-auto ">
+        <section className="mb-10 my-auto mx-auto lg:flex ">
           <div className=" rounded shadow-2xl">
             <Image alt="myPic3" src={myPic3}></Image>
           </div>
