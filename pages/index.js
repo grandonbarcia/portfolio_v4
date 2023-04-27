@@ -31,7 +31,7 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-          <div className="text-center lg:ml-5 lg:grid lg:grid-cols-1 lg:gap-4">
+          <div className="text-center lg:ml-5 lg:grid lg:grid-cols-1 lg:gap-4 lg:text-left">
             <p className="text-xl sm:mb-5">currently looking for work</p>
             <div>
               <h1 className="text-7xl font-extrabold">Brandon</h1>
@@ -71,14 +71,14 @@ export default function Home() {
             ></Image>
           </div>
         </section>
-        <section className="mb-10 my-auto mx-auto  lg:flex ">
-          <div className=" rounded shadow-2xl">
-            <Image alt="myPic3" src={myPic3}></Image>
+        <section className="mb-10 my-auto mx-auto lg:flex ">
+          <div className="mb-5 shadow-2xl">
+            <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
-          <div className="ml-5 grid lg:grid-cols-1 lg:gap-1 sm:text-center">
+          <div className="ml-5 grid grid-cols-1 gap-4">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
-              <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
+              <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
             <p className="text-xl pb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -111,14 +111,12 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-10 my-auto mx-auto lg:flex">
-          <div className="shadow-2xl">
-            <Image alt="myPic3" src={myPic3}></Image>
+          <div className="mb-5 shadow-2xl">
+            <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
           <div className="ml-5  grid grid-cols-1 gap-4">
-            <h1 className="text-5xl font-extrabold pb-3">Project #2</h1>
-            <p className="text-lg pb-3">
-              Tech Stack: Next.JS, Tailwind, Heroku
-            </p>
+            <h1 className="text-5xl font-extrabold">Project #2</h1>
+            <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
             <p className="text-xl pb-5">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -150,10 +148,10 @@ export default function Home() {
           </div>
         </section>
         <section className="mb-10 my-auto mx-auto lg:flex ">
-          <div className=" rounded shadow-2xl">
-            <Image alt="myPic3" src={myPic3}></Image>
+          <div className="mb-5 rounded shadow-2xl">
+            <Image className=" rounded " alt="myPic3" src={myPic3}></Image>
           </div>
-          <div className="ml-5 grid grid-cols-1 gap-1">
+          <div className="ml-5 grid grid-cols-1 gap-4">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">Project #3</h1>
               <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
