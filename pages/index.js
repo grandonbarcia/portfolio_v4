@@ -2,6 +2,7 @@ import Image from 'next/image';
 import myPic from '../assets/headshot.PNG';
 import myPic2 from '../assets/backshot.jpg';
 import myPic3 from '../assets/browser.jpg';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 
 export default function Home() {
   return (
@@ -151,7 +152,7 @@ export default function Home() {
         </section>
         <section className="mb-10 my-auto mx-auto lg:flex ">
           <div className="mb-5 rounded shadow-2xl">
-            <Image className=" rounded " alt="myPic3" src={myPic3}></Image>
+            <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
           <div className="ml-5 grid grid-cols-1 gap-4">
             <div>
@@ -186,6 +187,31 @@ export default function Home() {
                 </span>
               </a>
             </div>
+          </div>
+        </section>
+        <section className="text-center mb-10 my-auto mx-auto ">
+          <div>
+            <div className="mb-5">
+              <h1 className="text-4xl font-extrabold pb-3">Let's Collab!</h1>
+              <p className="text-xl">grandonleebarcia@gmail.com</p>
+            </div>
+            <div className="flex justify-between">
+              <div className="w-1/2">
+                <p className="text-xl">Find Me</p>
+                <div className="flex justify-evenly">
+                  <AiFillGithub size={32} />
+                  <AiFillLinkedin size={32} />
+                  <AiOutlineMail size={32} />
+                </div>
+              </div>
+              <div>
+                <p className="text-xl">San Jose, California </p>
+                <p className="text-lg">+1 (352) 262-7435</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            
           </div>
         </section>
       </div>
