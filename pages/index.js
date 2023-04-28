@@ -9,7 +9,6 @@ export default function Home() {
       <nav className="py-10 mb-12 flex justify-between">
         <h1 className="text-2xl font-semibold">brandonGarcia</h1>
         <ul className="flex items-center">
-          <li></li>
           <li>
             <a
               className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -38,8 +37,9 @@ export default function Home() {
               <h1 className="text-7xl font-extrabold">Garcia</h1>
             </div>
             <p className="text-xl lg:w-5/6">
-              is a producct designer who can code. Passionate about learning,
-              collaboration, and empowering people.
+              Ambitious software developer specializing in Front-End
+              technologies. Passionate about tech, learning new things, and
+              growing as a developer.
             </p>
           </div>
         </section>
@@ -47,10 +47,12 @@ export default function Home() {
           <div className="my-auto mx-auto">
             <h1 className="text-5xl font-extrabold pb-3">About Me</h1>
             <p className="text-xl pb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              Front-end web developer with an interest in React, NextJS, and
+              Tailwind. Creating web apps has always fascinated me, that's why I
+              decided to turn this interest into a career. Despite acquiring
+              considerable knowledge, I do not take it for granted. I constantly
+              try to develop, which allows me to level up my code and create
+              more dynamic projects.
             </p>
             <p className="text-xl pb-5">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -104,7 +106,7 @@ export default function Home() {
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                 <span className="relative text-black group-hover:text-white">
-                  Read More
+                  GitHub
                 </span>
               </a>
             </div>
@@ -141,7 +143,7 @@ export default function Home() {
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                 <span className="relative text-black group-hover:text-white">
-                  Read More
+                  GitHub
                 </span>
               </a>
             </div>
@@ -180,7 +182,7 @@ export default function Home() {
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
                 <span className="relative text-black group-hover:text-white">
-                  Read More
+                  GitHub
                 </span>
               </a>
             </div>
