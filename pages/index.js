@@ -23,7 +23,7 @@ export default function Home() {
         </ul>
       </nav>
       <div className="px-5 md:px-10 lg:px-20">
-        <section className="my-auto mx-auto mb-8 sm:grid lg:flex">
+        <section className="my-auto mx-auto mt-32 mb-32 sm:grid lg:flex ">
           <div className="w-full h-full lg:w-1/4">
             <div className="m:aspect-w-4 sm:aspect-h-3 lg:aspect-w-1 lg:aspect-h-1 ">
               <Image
@@ -49,7 +49,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="flex my-auto mx-auto mb-8">
+        <section className="flex my-auto mx-auto mt-36 mb-36 ">
           <div className="my-auto mx-auto">
             <h1 className="text-5xl font-extrabold pb-3">About Me</h1>
             <p className="text-xl pb-5">
@@ -79,7 +79,7 @@ export default function Home() {
             ></Image>
           </div>
         </section>
-        <section className="mb-10 my-auto mx-auto lg:flex ">
+        <section className="my-auto mx-auto mt-36 mb-36  lg:flex ">
           <div className="mb-5 shadow-2xl">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
@@ -118,7 +118,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mb-10 my-auto mx-auto lg:flex">
+        <section className=" my-auto mx-auto mt-36 mb-36  lg:flex">
           <div className="mb-5 shadow-2xl">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
@@ -155,7 +155,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="mb-10 my-auto mx-auto lg:flex ">
+        <section className=" my-auto mx-auto mt-36 mb-36  lg:flex ">
           <div className="mb-5 rounded shadow-2xl">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
@@ -194,7 +194,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="text-center mb-10 my-auto mx-auto lg:flex lg:justify-center lg:text-left">
+        <section className="text-center mt-32 mb-32  my-auto mx-auto lg:flex lg:justify-center lg:text-left">
           <div className="lg:w-1/2">
             <div className="mb-5">
               <h1 className="text-4xl font-extrabold pb-3">Let's Collab!</h1>
