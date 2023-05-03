@@ -42,17 +42,17 @@ export default function Home() {
               <h1 className="text-8xl font-extrabold">Brandon</h1>
               <h1 className="text-8xl font-extrabold">Garcia</h1>
             </div>
-            <p className="text-xl lg:w-5/6">
+            <p className="text-xl lg:w-5/6 leading-relaxed">
               Ambitious software developer specializing in Front-End
               technologies. Passionate about tech, learning new things, and
               growing as a developer.
             </p>
           </div>
         </section>
-        <section className="flex my-auto mx-auto mt-36 mb-36 ">
-          <div className="my-auto mx-auto">
-            <h1 className="text-5xl font-extrabold pb-3">About Me</h1>
-            <p className="text-xl pb-5">
+        <section className="flex justify-between my-auto mx-auto mt-36 mb-36  ">
+          <div className="w-1/2 ">
+            <h1 className="text-6xl font-extrabold pb-5">About Me</h1>
+            <p className="text-xl pb-5 leading-relaxed ">
               Front-end web developer with an interest in React, NextJS, and
               Tailwind. Creating web apps has always fascinated me, that's why I
               decided to turn this interest into a career. Despite acquiring
@@ -60,11 +60,11 @@ export default function Home() {
               try to develop, which allows me to level up my code and create
               more dynamic projects.
             </p>
-            <p className="text-xl pb-5">
+            <p className="text-xl pb-5 leading-relaxed">
               Duis aute irure dolor in reprehenderit in voluptate velit esse
               cillum dolore eu fugiat nulla pariatur.
             </p>
-            <p className="text-xl">
+            <p className="text-xl leading-relaxed">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum
             </p>
@@ -88,7 +88,7 @@ export default function Home() {
               <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
-            <p className="text-xl pb-5">
+            <p className="text-xl pb-5 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -125,7 +125,7 @@ export default function Home() {
           <div className="ml-5  grid grid-cols-1 gap-4">
             <h1 className="text-5xl font-extrabold">Project #2</h1>
             <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
-            <p className="text-xl pb-5">
+            <p className="text-xl pb-5 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -164,7 +164,7 @@ export default function Home() {
               <h1 className="text-5xl font-extrabold pb-3">Project #3</h1>
               <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
-            <p className="text-xl pb-5">
+            <p className="text-xl pb-5 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
