@@ -3,6 +3,8 @@ import myPic from '../assets/headshot.PNG';
 import myPic2 from '../assets/backshot.jpg';
 import myPic3 from '../assets/browser.jpg';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import { MdWavingHand } from 'react-icons/md';
+import { Maps } from './components/Maps';
 
 export default function Home() {
   return (
@@ -22,20 +24,23 @@ export default function Home() {
       </nav>
       <div className="px-5 md:px-10 lg:px-20">
         <section className="my-auto mx-auto mb-8 sm:grid lg:flex">
-          <div className=" w-full">
-            <div className="sm:aspect-w-4 sm:aspect-h-3 lg:aspect-w-16 lg:aspect-h-9 ">
+          <div className="w-full h-full lg:w-1/4">
+            <div className="m:aspect-w-4 sm:aspect-h-3 lg:aspect-w-1 lg:aspect-h-1 ">
               <Image
-                className="shadow-lg rounded-2xl"
+                className="object-cover shadow-lg rounded-2xl"
                 src={myPic}
                 alt="headshot"
               ></Image>
             </div>
           </div>
           <div className="text-center lg:ml-5 lg:grid lg:grid-cols-1 lg:gap-4 lg:text-left">
-            <p className="text-xl sm:mb-5">currently looking for work</p>
+            <div className="flex ">
+              <MdWavingHand size={22} color={'green'} />
+              <p className="text-xl ml-2">currently looking for work</p>
+            </div>
             <div>
-              <h1 className="text-7xl font-extrabold">Brandon</h1>
-              <h1 className="text-7xl font-extrabold">Garcia</h1>
+              <h1 className="text-8xl font-extrabold">Brandon</h1>
+              <h1 className="text-8xl font-extrabold">Garcia</h1>
             </div>
             <p className="text-xl lg:w-5/6">
               Ambitious software developer specializing in Front-End
@@ -189,16 +194,19 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="text-center mb-10 my-auto mx-auto ">
-          <div>
+        <section className="text-center mb-10 my-auto mx-auto lg:flex lg:justify-center lg:text-left">
+          <div className="lg:w-1/2">
             <div className="mb-5">
               <h1 className="text-4xl font-extrabold pb-3">Let's Collab!</h1>
               <p className="text-xl">grandonleebarcia@gmail.com</p>
             </div>
+            <div>
+              <Maps />
+            </div>
             <div className="flex justify-between">
               <div className="w-1/2">
                 <p className="text-xl">Find Me</p>
-                <div className="flex justify-evenly">
+                <div className="flex justify-evenly lg:w-1/2 ">
                   <AiFillGithub size={32} />
                   <AiFillLinkedin size={32} />
                   <AiOutlineMail size={32} />
@@ -210,19 +218,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div>
-            {/* <label
-              for="message"
-              class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            >
-              Your message
-            </label>
-            <textarea
-              id="message"
-              rows="4"
-              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Leave a comment..."
-            ></textarea> */}
+          <div className="lg:w-1/3">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <form action="#" class="space-y-8">
                 <div>
