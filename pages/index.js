@@ -79,16 +79,16 @@ export default function Home() {
             ></Image>
           </div>
         </section>
-        <section className="my-auto mx-auto mt-36 mb-36  lg:flex ">
-          <div className="mb-5 shadow-2xl">
+        <section className="my-auto mx-auto mt-36 mb-36 flex justify-center ">
+          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/3">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
-          <div className="ml-5 grid grid-cols-1 gap-4">
+          <div className="grid grid-cols-1 gap-4 ml-20 w-1/2">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
-            <p className="text-xl pb-5 leading-relaxed">
+            <p className="text-xl pb-5 leading-relaxed w-3/4">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -118,82 +118,47 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className=" my-auto mx-auto mt-36 mb-36  lg:flex">
-          <div className="mb-5 shadow-2xl">
+
+        <section className="my-auto mx-auto mt-36 mb-36 flex justify-center ">
+          <div className="grid grid-cols-1 gap-4  w-1/2">
+            <div>
+              <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
+              <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
+            </div>
+            <p className="text-xl pb-5 leading-relaxed w-3/4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div>
+              <a
+                href="#_"
+                className="relative inline-block px-4 py-2 font-medium group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
+                  View the Site
+                </span>
+              </a>
+              <a
+                href="#_"
+                className="relative inline-block px-4 py-2 font-medium group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
+                  GitHub
+                </span>
+              </a>
+            </div>
+          </div>
+          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/3">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
-          <div className="ml-5  grid grid-cols-1 gap-4">
-            <h1 className="text-5xl font-extrabold">Project #2</h1>
-            <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
-            <p className="text-xl pb-5 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div>
-              <a
-                href="#_"
-                className="relative inline-block px-4 py-2 font-medium group"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span className="relative text-black group-hover:text-white">
-                  View the Site
-                </span>
-              </a>
-              <a
-                href="#_"
-                className="relative inline-block px-4 py-2 font-medium group"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span className="relative text-black group-hover:text-white">
-                  GitHub
-                </span>
-              </a>
-            </div>
-          </div>
         </section>
-        <section className=" my-auto mx-auto mt-36 mb-36  lg:flex ">
-          <div className="mb-5 rounded shadow-2xl">
-            <Image className="rounded" alt="myPic3" src={myPic3}></Image>
-          </div>
-          <div className="ml-5 grid grid-cols-1 gap-4">
-            <div>
-              <h1 className="text-5xl font-extrabold pb-3">Project #3</h1>
-              <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
-            </div>
-            <p className="text-xl pb-5 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div>
-              <a
-                href="#_"
-                className="relative inline-block px-4 py-2 font-medium group"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span className="relative text-black group-hover:text-white">
-                  View the Site
-                </span>
-              </a>
-              <a
-                href="#_"
-                className="relative inline-block px-4 py-2 font-medium group"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span className="relative text-black group-hover:text-white">
-                  GitHub
-                </span>
-              </a>
-            </div>
-          </div>
-        </section>
+
         <section className="text-center mt-32 mb-32  my-auto mx-auto lg:flex lg:justify-center lg:text-left">
           <div className="lg:w-1/2">
             <div className="mb-5">
