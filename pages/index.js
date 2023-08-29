@@ -6,7 +6,17 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { MdWavingHand } from 'react-icons/md';
 import { Maps } from './components/Maps';
 
+const COLOR = 'bg-slate-400';
+
 export default function Home() {
+  const dot = <div class="w-4 h-4 bg-slate-400 rounded-full"></div>;
+
+  let board = Array(2)
+    .fill(0)
+    .map((row) => new Array(3).fill(dot));
+
+  console.log(board);
+
   return (
     <main className="px-10 md:px-20 lg:px-40">
       <nav className="py-10 mb-12 flex justify-between">
@@ -14,14 +24,27 @@ export default function Home() {
         <ul className="flex items-center">
           <li>
             <a
-              className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-              href="#"
+              href="#_"
+              className="relative inline-block px-4 py-2 font-medium group"
             >
-              Resume
+              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+              <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+              <span className="relative text-black group-hover:text-white">
+                Resume
+              </span>
             </a>
           </li>
         </ul>
       </nav>
+      {board.map((dots, index) => {
+        return (
+          <ol className="flex">
+            {dots.map((subDots, sIndex) => {
+              return subDots;
+            })}
+          </ol>
+        );
+      })}
       <div className="px-5 md:px-10 lg:px-20">
         <section className="my-auto mx-auto mt-32 mb-32 sm:grid lg:flex ">
           <div className="w-full h-full lg:w-1/4">
@@ -79,7 +102,7 @@ export default function Home() {
             ></Image>
           </div>
         </section>
-        <section className="my-auto mx-auto mt-36 mb-36 flex justify-center ">
+        <section className="mt-36 mb-36 flex justify-between ">
           <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/3">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
@@ -119,7 +142,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="my-auto mx-auto mt-36 mb-36 flex justify-center ">
+        <section className=" mt-36 mb-36 flex justify-between ">
           <div className="grid grid-cols-1 gap-4  w-1/2">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
