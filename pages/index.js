@@ -9,18 +9,28 @@ import { Maps } from './components/Maps';
 const COLOR = 'bg-slate-400';
 
 export default function Home() {
-  const dot = <div class="w-4 h-4 bg-slate-400 rounded-full"></div>;
+  const dot = <div class="mt-2 ml-4 w-2 h-2 bg-slate-200 rounded-full"></div>;
 
-  let board = Array(2)
+  let board = Array(16)
     .fill(0)
-    .map((row) => new Array(3).fill(dot));
-
-  console.log(board);
+    .map((row) => new Array(11).fill(dot));
 
   return (
-    <main className="px-10 md:px-20 lg:px-40">
+    <main className="relative px-10 md:px-20 lg:px-40">
+      <div className="absolute top-0 right-96">
+        {board.map((dots, index) => {
+          return (
+            <ol className="flex">
+              {dots.map((subDots, sIndex) => {
+                return subDots;
+              })}
+            </ol>
+          );
+        })}
+      </div>
+
       <nav className="py-10 mb-12 flex justify-between">
-        <h1 className="text-2xl font-semibold">brandonGarcia</h1>
+        <h1 className="text-2xl font-bold">brandonGarcia</h1>
         <ul className="flex items-center">
           <li>
             <a
@@ -36,15 +46,6 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-      {board.map((dots, index) => {
-        return (
-          <ol className="flex">
-            {dots.map((subDots, sIndex) => {
-              return subDots;
-            })}
-          </ol>
-        );
-      })}
       <div className="px-5 md:px-10 lg:px-20">
         <section className="my-auto mx-auto mt-32 mb-32 sm:grid lg:flex ">
           <div className="w-full h-full lg:w-1/4">
@@ -65,15 +66,16 @@ export default function Home() {
               <h1 className="text-8xl font-extrabold">Brandon</h1>
               <h1 className="text-8xl font-extrabold">Garcia</h1>
             </div>
-            <p className="text-xl lg:w-5/6 leading-relaxed">
+            <p className="text-xl font-semibold  lg:w-4/6 leading-relaxed">
               Ambitious software developer specializing in Front-End
               technologies. Passionate about tech, learning new things, and
               growing as a developer.
             </p>
           </div>
         </section>
-        <section className="flex justify-between my-auto mx-auto mt-36 mb-36  ">
-          <div className="w-1/2 ">
+        <section className="relative flex justify-between my-auto mx-auto mt-36 mb-36  ">
+          <div class="absolute -left-16 -top-12 z-0 w-32 h-32 bg-red-400 rounded-full"></div>
+          <div className="w-1/2 z-40 ">
             <h1 className="text-6xl font-extrabold pb-5">About Me</h1>
             <p className="text-xl pb-5 leading-relaxed ">
               Front-end web developer with an interest in React, NextJS, and
