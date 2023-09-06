@@ -6,10 +6,10 @@ import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { MdWavingHand } from 'react-icons/md';
 import { Maps } from './components/Maps';
 
-const COLOR = 'bg-slate-400';
-
 export default function Home() {
-  const dot = <div class="mt-2 ml-4 w-2 h-2 bg-slate-200 rounded-full"></div>;
+  const dot = (
+    <div className="mt-2 ml-4 w-2 h-2 bg-slate-200 rounded-full"></div>
+  );
 
   let board = Array(16)
     .fill(0)
@@ -74,7 +74,7 @@ export default function Home() {
           </div>
         </section>
         <section className="relative flex justify-between my-auto mx-auto mt-36 mb-36  ">
-          <div class="absolute -left-16 -top-12 z-0 w-32 h-32 bg-red-400 rounded-full"></div>
+          <div className="absolute -left-16 -top-12 z-0 w-32 h-32 bg-red-400 rounded-full"></div>
           <div className="w-1/2 z-40 ">
             <h1 className="text-6xl font-extrabold pb-5">About Me</h1>
             <p className="text-xl pb-5 leading-relaxed ">
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 gap-4 ml-20 w-1/2">
             <div>
-              <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
+              <h1 className="text-5xl font-extrabold pb-3">Kanban Board</h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
             <p className="text-xl pb-5 leading-relaxed w-3/4">
@@ -121,8 +121,9 @@ export default function Home() {
             </p>
             <div>
               <a
-                href="#_"
+                href="https://merry-blini-eb0b20.netlify.app/"
                 className="relative inline-block px-4 py-2 font-medium group"
+                target="_blank"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
@@ -131,8 +132,9 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="#_"
+                href="https://github.com/grandonbarcia/kanban-board"
                 className="relative inline-block px-4 py-2 font-medium group"
+                target="_blank"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
@@ -147,7 +149,9 @@ export default function Home() {
         <section className=" mt-36 mb-36 flex justify-between ">
           <div className="grid grid-cols-1 gap-4  w-1/2">
             <div>
-              <h1 className="text-5xl font-extrabold pb-3">Project #1</h1>
+              <h1 className="text-5xl font-extrabold pb-3">
+                Password Generator
+              </h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
             <p className="text-xl pb-5 leading-relaxed w-3/4">
@@ -158,7 +162,8 @@ export default function Home() {
             </p>
             <div>
               <a
-                href="#_"
+                href="https://silly-cheesecake-6453bb.netlify.app/"
+                target="_blank"
                 className="relative inline-block px-4 py-2 font-medium group"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -168,8 +173,9 @@ export default function Home() {
                 </span>
               </a>
               <a
-                href="#_"
+                href="https://github.com/grandonbarcia/password-generator"
                 className="relative inline-block px-4 py-2 font-medium group"
+                target="_blank"
               >
                 <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
@@ -209,19 +215,19 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:w-1/3">
-            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-              <form action="#" class="space-y-8">
+            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              <form action="#" className="space-y-8">
                 <div>
                   <label
                     for="email"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Your email
                   </label>
                   <input
                     type="email"
                     id="email"
-                    class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="name@gmail.com"
                     required
                   />
@@ -229,29 +235,29 @@ export default function Home() {
                 <div>
                   <label
                     for="subject"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Subject
                   </label>
                   <input
                     type="text"
                     id="subject"
-                    class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                    className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                     placeholder="Let us know how we can help you"
                     required
                   />
                 </div>
-                <div class="sm:col-span-2">
+                <div className="sm:col-span-2">
                   <label
                     for="message"
-                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                   >
                     Your message
                   </label>
                   <textarea
                     id="message"
                     rows="6"
-                    class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                     placeholder="Leave a comment..."
                   ></textarea>
                 </div>
