@@ -105,7 +105,7 @@ export default function Home() {
           </div>
         </section>
         <section className="mt-36 mb-36 flex justify-between ">
-          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/3">
+          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/2">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
           <div className="grid grid-cols-1 gap-4 ml-20 w-1/2">
@@ -114,10 +114,11 @@ export default function Home() {
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
             <p className="text-xl pb-5 leading-relaxed w-3/4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              A kanban board is one of the tools that can be used to implement
+              kanban to manage work at a personal or organizational level.
+              Kanban boards visually depict work at various stages of a process
+              using cards to represent work items and columns to represent each
+              stage of the process.
             </p>
             <div>
               <a
@@ -147,7 +148,7 @@ export default function Home() {
         </section>
 
         <section className=" mt-36 mb-36 flex justify-between ">
-          <div className="grid grid-cols-1 gap-4  w-1/2">
+          <div className="grid grid-cols-1 gap-4 w-1/2">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">
                 Password Generator
@@ -155,10 +156,11 @@ export default function Home() {
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
             <p className="text-xl pb-5 leading-relaxed w-3/4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              A random password generator is software program or hardware device
+              that takes input from a random or pseudo-random number generator
+              and automatically generates a password. Random passwords can be
+              generated manually, using simple sources of randomness such as
+              dice or coins, or they can be generated using a computer.
             </p>
             <div>
               <a
@@ -185,12 +187,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/3">
+          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/2">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
         </section>
 
-        <section className="text-center mt-32 mb-32  my-auto mx-auto lg:flex lg:justify-center lg:text-left">
+        <section className="text-center mt-32 mb-32   lg:flex lg:justify-between lg:text-left">
           <div className="lg:w-1/2">
             <div className="mb-5">
               <h1 className="text-4xl font-extrabold pb-3">Let's Collab!</h1>
@@ -199,9 +201,9 @@ export default function Home() {
             <div>
               <Maps />
             </div>
-            <div className="flex justify-between">
+            <div className="flex justify-between ">
               <div className="w-1/2">
-                <p className="text-xl">Find Me</p>
+                <p className="text-xl lg:w-1/2 lg:text-center">Find Me</p>
                 <div className="flex justify-evenly lg:w-1/2 ">
                   <AiFillGithub size={32} />
                   <AiFillLinkedin size={32} />
@@ -219,7 +221,7 @@ export default function Home() {
               <form action="#" className="space-y-8">
                 <div>
                   <label
-                    for="email"
+                    htmlFor="email"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Your email
@@ -234,7 +236,7 @@ export default function Home() {
                 </div>
                 <div>
                   <label
-                    for="subject"
+                    htmlFor="subject"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Subject
@@ -243,13 +245,13 @@ export default function Home() {
                     type="text"
                     id="subject"
                     className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                    placeholder="Let us know how we can help you"
+                    placeholder="Let me know how I can help you"
                     required
                   />
                 </div>
                 <div className="sm:col-span-2">
                   <label
-                    for="message"
+                    htmlFor="message"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                   >
                     Your message
@@ -258,7 +260,7 @@ export default function Home() {
                     id="message"
                     rows="6"
                     className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                    placeholder="Leave a comment..."
+                    placeholder="Leave a message..."
                   ></textarea>
                 </div>
                 <button
