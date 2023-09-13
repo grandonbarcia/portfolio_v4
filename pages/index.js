@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main className="relative px-10 md:px-20 lg:px-40">
-      <div className="absolute top-0 right-96">
+      <div className="hidden xl:block absolute top-0 right-96 ">
         {board.map((dots, index) => {
           return (
             <ol className="flex">
@@ -46,8 +46,8 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-      <div className="px-5 md:px-10 lg:px-20">
-        <section className="my-auto mx-auto mt-32 mb-32 sm:grid lg:flex ">
+      <div className="grid col-span-1 space-y-32 md:px-10 lg:px-20">
+        <section className="grid col-span-1 space-y-5 lg:col-span-0 lg:space-y-0 lg:flex">
           <div className="w-full h-full lg:w-1/4">
             <div className="m:aspect-w-4 sm:aspect-h-3 lg:aspect-w-1 lg:aspect-h-1 ">
               <Image
@@ -57,8 +57,8 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-          <div className="text-center lg:ml-5 lg:grid lg:grid-cols-1 lg:gap-4 lg:text-left">
-            <div className="flex ">
+          <div className="text-center grid col-span-1 space-y-5 lg:pl-5  lg:text-left">
+            <div className="flex justify-center lg:justify-normal">
               <MdWavingHand size={22} color={'green'} />
               <p className="text-xl ml-2">currently looking for work</p>
             </div>
@@ -73,9 +73,9 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section className="relative flex justify-between my-auto mx-auto mt-36 mb-36  ">
+        <section className="relative flex justify-between  ">
           <div className="absolute -left-16 -top-12 z-0 w-32 h-32 bg-red-400 rounded-full"></div>
-          <div className="w-1/2 z-40 ">
+          <div className="w-full md:w-1/2 z-40 ">
             <h1 className="text-6xl font-extrabold pb-5">About Me</h1>
             <p className="text-xl pb-5 leading-relaxed ">
               Front-end web developer with an interest in React, NextJS, and
@@ -104,58 +104,60 @@ export default function Home() {
             ></Image>
           </div>
         </section>
-        <section className="mt-36 mb-36 flex justify-between ">
-          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/2">
-            <Image className="rounded" alt="myPic3" src={myPic3}></Image>
-          </div>
-          <div className="grid grid-cols-1 gap-4 ml-20 w-1/2">
-            <div>
-              <h1 className="text-5xl font-extrabold pb-3">Kanban Board</h1>
-              <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
+        <section>
+          <div className="text-center md:text-left md:flex md:justify-between ">
+            <div className="mb-5 shadow-2xl flex  md:w-1/2 lg:mb-0 ">
+              <Image className="rounded" alt="myPic3" src={myPic3}></Image>
             </div>
-            <p className="text-xl pb-5 leading-relaxed w-3/4">
-              A kanban board is one of the tools that can be used to implement
-              kanban to manage work at a personal or organizational level.
-              Kanban boards visually depict work at various stages of a process
-              using cards to represent work items and columns to represent each
-              stage of the process.
-            </p>
-            <div>
-              <a
-                href="https://merry-blini-eb0b20.netlify.app/"
-                className="relative inline-block px-4 py-2 font-medium group"
-                target="_blank"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span className="relative text-black group-hover:text-white">
-                  View the Site
-                </span>
-              </a>
-              <a
-                href="https://github.com/grandonbarcia/kanban-board"
-                className="relative inline-block px-4 py-2 font-medium group"
-                target="_blank"
-              >
-                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-                <span className="relative text-black group-hover:text-white">
-                  GitHub
-                </span>
-              </a>
+            <div className="grid grid-cols-1 gap-4 w-full md:ml-20  md:w-1/2">
+              <div>
+                <h1 className="text-5xl font-extrabold pb-3">Kanban Board</h1>
+                <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
+              </div>
+              <p className="text-xl pb-5 leading-relaxed w-full md:w-3/4">
+                A kanban board is one of the tools that can be used to implement
+                kanban to manage work at a personal or organizational level.
+                Kanban boards visually depict work at various stages of a
+                process using cards to represent work items and columns to
+                represent each stage of the process.
+              </p>
+              <div>
+                <a
+                  href="https://merry-blini-eb0b20.netlify.app/"
+                  className="relative inline-block px-4 py-2 font-medium group"
+                  target="_blank"
+                >
+                  <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                  <span className="relative text-black group-hover:text-white">
+                    View the Site
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/grandonbarcia/kanban-board"
+                  className="relative inline-block px-4 py-2 font-medium group"
+                  target="_blank"
+                >
+                  <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                  <span className="relative text-black group-hover:text-white">
+                    GitHub
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className=" mt-36 mb-36 flex justify-between ">
-          <div className="grid grid-cols-1 gap-4 w-1/2">
+        <section className="grid text-center md:text-left md:flex md:justify-between ">
+          <div className="order-last grid grid-cols-1 gap-4 w-full md:order-first md:w-1/2">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">
                 Password Generator
               </h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
-            <p className="text-xl pb-5 leading-relaxed w-3/4">
+            <p className="text-xl pb-5 leading-relaxed w-full md:w-3/4">
               A random password generator is software program or hardware device
               that takes input from a random or pseudo-random number generator
               and automatically generates a password. Random passwords can be
@@ -187,12 +189,12 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="mb-5 shadow-2xl flex lg:mb-0 w-1/2">
+          <div className="order-first mb-5 shadow-2xl flex w-full md:order-last md:w-1/2 lg:mb-0 ">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
         </section>
 
-        <section className="text-center mt-32 mb-32   lg:flex lg:justify-between lg:text-left">
+        <section className="grid col-span-1 space-y-32 text-center lg:space-y-2 lg:flex lg:justify-between lg:text-left">
           <div className="grid lg:w-1/2 ">
             <div className="">
               <h1 className="text-4xl font-extrabold ">Let's Collab!</h1>
