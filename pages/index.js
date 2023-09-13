@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         <section className="relative flex justify-between  ">
           <div className="absolute -left-16 -top-12 z-0 w-32 h-32 bg-red-400 rounded-full"></div>
-          <div className="w-full md:w-1/2 z-40 ">
+          <div className="w-full lg:w-1/2 z-40 ">
             <h1 className="text-6xl font-extrabold pb-5">About Me</h1>
             <p className="text-xl pb-5 leading-relaxed ">
               Front-end web developer with an interest in React, NextJS, and
@@ -94,7 +94,7 @@ export default function Home() {
               officia deserunt mollit anim id est laborum
             </p>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <Image
               className="rounded-2xl shadow-lg "
               src={myPic2}
@@ -105,16 +105,16 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="text-center md:text-left md:flex md:justify-between ">
-            <div className="mb-5 shadow-2xl flex  md:w-1/2 lg:mb-0 ">
+          <div className="text-center lg:text-left lg:flex lg:justify-between ">
+            <div className="mb-5 shadow-2xl flex  lg:w-1/2 lg:mb-0 ">
               <Image className="rounded" alt="myPic3" src={myPic3}></Image>
             </div>
-            <div className="grid grid-cols-1 gap-4 w-full md:ml-20  md:w-1/2">
+            <div className="grid grid-cols-1 gap-4 w-full lg:ml-20  lg:w-1/2">
               <div>
                 <h1 className="text-5xl font-extrabold pb-3">Kanban Board</h1>
                 <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
               </div>
-              <p className="text-xl pb-5 leading-relaxed w-full md:w-3/4">
+              <p className="text-xl pb-5 leading-relaxed w-full lg:w-3/4">
                 A kanban board is one of the tools that can be used to implement
                 kanban to manage work at a personal or organizational level.
                 Kanban boards visually depict work at various stages of a
@@ -149,15 +149,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid text-center md:text-left md:flex md:justify-between ">
-          <div className="order-last grid grid-cols-1 gap-4 w-full md:order-first md:w-1/2">
+        <section className="grid text-center lg:text-left lg:flex lg:justify-between ">
+          <div className="order-last grid grid-cols-1 gap-4 w-full lg:order-first lg:w-1/2">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">
                 Password Generator
               </h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
-            <p className="text-xl pb-5 leading-relaxed w-full md:w-3/4">
+            <p className="text-xl pb-5 leading-relaxed w-full lg:w-3/4">
               A random password generator is software program or hardware device
               that takes input from a random or pseudo-random number generator
               and automatically generates a password. Random passwords can be
@@ -189,7 +189,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="order-first mb-5 shadow-2xl flex w-full md:order-last md:w-1/2 lg:mb-0 ">
+          <div className="order-first mb-5 shadow-2xl flex w-full lg:order-last lg:w-1/2 lg:mb-0 ">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
         </section>
