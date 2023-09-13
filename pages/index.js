@@ -16,7 +16,7 @@ export default function Home() {
     .map((row) => new Array(11).fill(dot));
 
   return (
-    <main className="relative px-10 md:px-20 lg:px-40">
+    <main className="relative px-10 xl:px-40">
       <div className="hidden xl:block absolute top-0 right-96 ">
         {board.map((dots, index) => {
           return (
@@ -48,8 +48,8 @@ export default function Home() {
       </nav>
       <div className="grid col-span-1 space-y-32 md:px-10 lg:px-20">
         <section className="grid col-span-1 space-y-5 lg:col-span-0 lg:space-y-0 lg:flex">
-          <div className="w-full h-full lg:w-1/4">
-            <div className="m:aspect-w-4 sm:aspect-h-3 lg:aspect-w-1 lg:aspect-h-1 ">
+          <div className="w-full h-full xl:w-1/4">
+            <div className="sm:aspect-h-3 md:aspect-w-4 lg:aspect-w-1 lg:aspect-h-1 ">
               <Image
                 className="object-cover shadow-lg rounded-2xl"
                 src={myPic}
@@ -66,7 +66,7 @@ export default function Home() {
               <h1 className="text-8xl font-extrabold">Brandon</h1>
               <h1 className="text-8xl font-extrabold">Garcia</h1>
             </div>
-            <p className="text-xl font-semibold  lg:w-4/6 leading-relaxed">
+            <p className="text-xl  xl:w-4/6 leading-relaxed">
               Ambitious software developer specializing in Front-End
               technologies. Passionate about tech, learning new things, and
               growing as a developer.
