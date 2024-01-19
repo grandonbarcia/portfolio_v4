@@ -16,7 +16,7 @@ export default function Home() {
     .map((row) => new Array(11).fill(dot));
 
   return (
-    <main className="relative px-10 xl:px-40">
+    <main className="relative px-10 xl:px-40 md:pb-40">
       <div className="hidden xl:block absolute top-0 right-96 ">
         {board.map((dots, index) => {
           return (
@@ -46,10 +46,10 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-      <div className="grid col-span-1 space-y-32 md:px-10 lg:px-20">
+      <div className="grid col-span-1 space-y-32 md:mx-24 ">
         <section className="grid col-span-1 space-y-5 lg:col-span-0 lg:space-y-0 lg:flex">
           <div className="w-full h-full xl:w-1/4">
-            <div className="sm:aspect-h-3 md:aspect-w-4 lg:aspect-w-1 lg:aspect-h-1 ">
+            <div className="sm:aspect-h-3 md:aspect-w-5 lg:aspect-w-1 lg:aspect-h-1 ">
               <Image
                 className="object-cover shadow-lg rounded-2xl"
                 src={myPic}
@@ -57,7 +57,7 @@ export default function Home() {
               ></Image>
             </div>
           </div>
-          <div className="text-center grid col-span-1 space-y-5 lg:pl-5  lg:text-left">
+          <div className="text-center grid col-span-1 space-y-1 lg:pl-5  lg:text-left">
             <div className="flex justify-center lg:justify-normal">
               <MdWavingHand size={22} color={'green'} />
               <p className="text-xl ml-2">currently looking for work</p>
@@ -67,7 +67,7 @@ export default function Home() {
               <h1 className="text-8xl font-extrabold">Garcia</h1>
             </div>
             <p className="text-xl  xl:w-4/6 leading-relaxed">
-              Ambitious software developer specializing in Front-End
+              is an ambitious software developer specializing in Front-End
               technologies. Passionate about tech, learning new things, and
               growing as a developer.
             </p>
@@ -78,25 +78,27 @@ export default function Home() {
           <div className="w-full lg:w-1/2 z-40 ">
             <h1 className="text-6xl font-extrabold pb-5">About Me</h1>
             <p className="text-xl pb-5 leading-relaxed ">
-              Front-end web developer with an interest in React, NextJS, and
-              Tailwind. Creating web apps has always fascinated me, that's why I
-              decided to turn this interest into a career. Despite acquiring
-              considerable knowledge, I do not take it for granted. I constantly
-              try to develop, which allows me to level up my code and create
-              more dynamic projects.
+              Hello there! I'm <span className="font-semibold">Brandon</span>, a
+              passionate and aspiring web developer with a focus on creating
+              seamless and modern web experiences. While my journey in the world
+              of development is just beginning, I bring a fresh perspective and
+              a commitment to mastering cutting-edge technologies.
             </p>
             <p className="text-xl pb-5 leading-relaxed">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur.
+              My specialization lies in crafting dynamic and responsive web
+              applications using React, Next.js, and Tailwind CSS. These
+              technologies, known for their efficiency and performance, are the
+              cornerstones of my development toolkit.
             </p>
             <p className="text-xl leading-relaxed">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum
+              While my professional experience might be in its early stages, my
+              passion for coding, problem-solving, and creating delightful user
+              experiences drives me to excel.
             </p>
           </div>
-          <div className="hidden lg:block">
+          <div className="hidden lg:flex ">
             <Image
-              className="rounded-2xl shadow-lg "
+              className="rounded-2xl shadow-lg my-auto"
               src={myPic2}
               height={400}
               width={400}
@@ -105,16 +107,16 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className="text-center lg:text-left lg:flex lg:justify-between ">
-            <div className="mb-5 shadow-2xl flex  lg:w-1/2 lg:mb-0 ">
+          <div className="text-center xl:text-left xl:flex xl:justify-between ">
+            <div className="mb-5 shadow-2xl flex xl:w-1/2 xl:mb-0 ">
               <Image className="rounded" alt="myPic3" src={myPic3}></Image>
             </div>
-            <div className="grid grid-cols-1 gap-4 w-full lg:ml-20  lg:w-1/2">
+            <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
               <div>
                 <h1 className="text-5xl font-extrabold pb-3">Kanban Board</h1>
                 <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
               </div>
-              <p className="text-xl pb-5 leading-relaxed w-full lg:w-3/4">
+              <p className="text-xl pb-5 leading-relaxed w-full xl:w-3/4">
                 A kanban board is one of the tools that can be used to implement
                 kanban to manage work at a personal or organizational level.
                 Kanban boards visually depict work at various stages of a
@@ -149,15 +151,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="grid text-center lg:text-left lg:flex lg:justify-between ">
-          <div className="order-last grid grid-cols-1 gap-4 w-full lg:order-first lg:w-1/2">
+        <section className="grid text-center xl:text-left xl:flex xl:justify-between ">
+          <div className="order-last grid grid-cols-1 gap-4 w-full xl:order-first xl:w-1/2">
             <div>
               <h1 className="text-5xl font-extrabold pb-3">
                 Password Generator
               </h1>
               <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
             </div>
-            <p className="text-xl pb-5 leading-relaxed w-full lg:w-3/4">
+            <p className="text-xl pb-5 leading-relaxed w-full xl:w-3/4">
               A random password generator is software program or hardware device
               that takes input from a random or pseudo-random number generator
               and automatically generates a password. Random passwords can be
@@ -189,12 +191,59 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="order-first mb-5 shadow-2xl flex w-full lg:order-last lg:w-1/2 lg:mb-0 ">
+          <div className="order-first mb-5 shadow-2xl flex w-full xl:order-last xl:w-1/2 xl:mb-0 ">
             <Image className="rounded" alt="myPic3" src={myPic3}></Image>
           </div>
         </section>
 
-        <section className="grid col-span-1 space-y-32 text-center lg:space-y-2 lg:flex lg:justify-between lg:text-left">
+        <section>
+          <div className="text-center xl:text-left xl:flex xl:justify-between ">
+            <div className="mb-5 shadow-2xl flex xl:w-1/2 xl:mb-0 ">
+              <Image className="rounded" alt="myPic3" src={myPic3}></Image>
+            </div>
+            <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
+              <div>
+                <h1 className="text-5xl font-extrabold pb-3">Memory Game</h1>
+                <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
+              </div>
+              <p className="text-xl pb-5 leading-relaxed w-full xl:w-3/4">
+                A fun memory game where users can test their memory skills with
+                themselves or with friends. Users can customize their gaming
+                experience by choosing between numbers or icons as the matching
+                elements. The game allows further personalization by offering
+                grid size options, with players selecting either a classic 4 by
+                4 grid for a quick challenge or a more intricate 6 by 6 grid for
+                a heightened level of difficulty.
+              </p>
+              <div>
+                <a
+                  href="https://merry-blini-eb0b20.netlify.app/"
+                  className="relative inline-block px-4 py-2 font-medium group"
+                  target="_blank"
+                >
+                  <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                  <span className="relative text-black group-hover:text-white">
+                    View the Site
+                  </span>
+                </a>
+                <a
+                  href="https://github.com/grandonbarcia/kanban-board"
+                  className="relative inline-block px-4 py-2 font-medium group"
+                  target="_blank"
+                >
+                  <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                  <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                  <span className="relative text-black group-hover:text-white">
+                    GitHub
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="grid col-span-1 space-y-32 text-center lg:space-y-2 lg:flex lg:justify-between lg:text-left mb-24">
           <div className="grid lg:w-1/2 ">
             <div className="">
               <h1 className="text-4xl font-extrabold ">Let's Collab!</h1>
