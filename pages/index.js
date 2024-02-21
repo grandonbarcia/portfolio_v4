@@ -2,6 +2,7 @@ import Image from 'next/image';
 import myPic from '../assets/headshot.PNG';
 import myPic2 from '../assets/backshot.jpg';
 import myPic3 from '../assets/browser.jpg';
+
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { MdWavingHand } from 'react-icons/md';
 import { Maps } from './components/Maps';
@@ -103,13 +104,14 @@ export default function Home() {
               src={myPic2}
               height={400}
               width={400}
-              alt="headshot"
+              alt="backshot"
+              priority={true}
             ></Image>
           </div>
         </section>
         <section>
           <div className="text-center xl:text-left xl:flex xl:justify-between ">
-            <div className="mb-5 shadow-2xl flex xl:w-1/2 xl:mb-0 ">
+            <div className="mb-5 shadow-2xl flex xl:w-1/2 xl:mb-0 relative ">
               <Image className="rounded" alt="myPic3" src={myPic3}></Image>
             </div>
             <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
@@ -218,7 +220,7 @@ export default function Home() {
               </p>
               <div>
                 <a
-                  href="https://merry-blini-eb0b20.netlify.app/"
+                  href="https://cheery-scone-e35758.netlify.app"
                   className="relative inline-block px-4 py-2 font-medium group"
                   target="_blank"
                 >
