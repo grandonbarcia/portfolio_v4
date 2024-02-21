@@ -5,8 +5,8 @@ import myPic3 from '../assets/browser.jpg';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { MdWavingHand } from 'react-icons/md';
-import { Maps } from './components/Maps';
-import { Contact } from './components/Contact';
+import Maps from './components/Maps';
+import Contact from './components/Contact';
 
 export default function Home() {
   const dot = (

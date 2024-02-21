@@ -2,7 +2,7 @@
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
-export const Contact = () => {
+export default function Contact() {
   const form = useRef();
 
   const [isEmailSent, setEmailSent] = useState(false);
@@ -98,4 +98,4 @@ export const Contact = () => {
   }
 
   return isEmailSent ? <ThankYou /> : <Form />;
-};
+}
