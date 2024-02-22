@@ -1,7 +1,11 @@
+'use client';
 import Image from 'next/image';
-import myPic from '../assets/headshot.PNG';
+import myPic from '../assets/headshot.jpg';
 import myPic2 from '../assets/backshot.jpg';
 import myPic3 from '../assets/browser.jpg';
+import kanban from '../assets/kanban.jpg';
+import generator from '../assets/pwGen.jpg';
+import memory from '../assets/memory.jpg';
 
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
 import { MdWavingHand } from 'react-icons/md';
@@ -36,7 +40,10 @@ export default function Home() {
         <ul className="flex items-center">
           <li>
             <a
-              href="#_"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener"
+              noreferrer="true"
               className="relative inline-block px-4 py-2 font-medium group"
             >
               <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
@@ -112,7 +119,7 @@ export default function Home() {
         <section>
           <div className="text-center xl:text-left xl:flex xl:justify-between ">
             <div className="mb-5 shadow-2xl flex xl:w-1/2 xl:mb-0 relative ">
-              <Image className="rounded" alt="myPic3" src={myPic3}></Image>
+              <Image className="rounded" alt="myPic3" src={kanban}></Image>
             </div>
             <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
               <div>
@@ -195,14 +202,14 @@ export default function Home() {
             </div>
           </div>
           <div className="order-first mb-5 shadow-2xl flex w-full xl:order-last xl:w-1/2 xl:mb-0 ">
-            <Image className="rounded" alt="myPic3" src={myPic3}></Image>
+            <Image className="rounded" alt="myPic3" src={generator}></Image>
           </div>
         </section>
 
         <section>
           <div className="text-center xl:text-left xl:flex xl:justify-between ">
             <div className="mb-5 shadow-2xl flex xl:w-1/2 xl:mb-0 ">
-              <Image className="rounded" alt="myPic3" src={myPic3}></Image>
+              <Image className="rounded" alt="myPic3" src={memory}></Image>
             </div>
             <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
               <div>
@@ -231,7 +238,7 @@ export default function Home() {
                   </span>
                 </a>
                 <a
-                  href="https://github.com/grandonbarcia/kanban-board"
+                  href="https://github.com/grandonbarcia/memory-game"
                   className="relative inline-block px-4 py-2 font-medium group"
                   target="_blank"
                 >
