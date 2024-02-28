@@ -1,15 +1,19 @@
 'use client';
+import Image from 'next/image';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+
+import LoadingGIF from '../../assets/loading.gif';
 
 export default function Contact() {
   const form = useRef();
 
   const [isEmailSent, setEmailSent] = useState(false);
+  const [isLoading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setLoading(true);
     emailjs
       .sendForm(
         'service_qjtkkq8',
@@ -20,6 +24,7 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
+          setEmailSent(true);
         },
         (error) => {
           console.log(error.text);
@@ -28,12 +33,14 @@ export default function Contact() {
   };
 
   function ThankYou() {
-    return <div>Thank You</div>;
+    return <div className="text-6xl">Thank You!</div>;
   }
 
   function Form() {
-    return (
-      <form ref={form} onSubmit={sendEmail} className="space-y-8">
+    return isLoading ? (
+      <Image width={200} height={200} src={LoadingGIF} alt="loading"></Image>
+    ) : (
+      <form ref={form} onSubmit={sendEmail} className="space-y-8 w-full">
         <div>
           <label
             htmlFor="email"
@@ -97,5 +104,9 @@ export default function Contact() {
     );
   }
 
-  return isEmailSent ? <ThankYou /> : <Form />;
+  return (
+    <div className="flex h-full justify-center items-center">
+      {isEmailSent ? <ThankYou /> : <Form />}
+    </div>
+  );
 }
