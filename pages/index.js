@@ -268,9 +268,18 @@ export default function Home() {
                   Find Me
                 </p>
                 <div className="flex justify-evenly lg:w-1/2 ">
-                  <AiFillGithub size={32} />
-                  <AiFillLinkedin size={32} />
-                  <AiOutlineMail size={32} />
+                  <a href="https://www.google.com" target="_blank">
+                    <AiFillGithub size={32} className="hover:text-green-700" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/brandon-garcia-54708516b/"
+                    target="_blank"
+                  >
+                    <AiFillLinkedin size={32} className="hover:text-cyan-700" />
+                  </a>
+                  <a target="_blank">
+                    <AiOutlineMail size={32} className="hover:text-red-700" />
+                  </a>
                 </div>
               </div>
               <div>
@@ -282,7 +291,7 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:w-1/3">
-            <div className="   mx-auto max-w-screen-md">
+            <div className="  mx-auto max-w-screen-md">
               <Contact />
             </div>
           </div>
