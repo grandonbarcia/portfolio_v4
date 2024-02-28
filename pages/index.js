@@ -254,7 +254,7 @@ export default function Home() {
         </section>
 
         <section className="grid col-span-1 space-y-32 text-center lg:space-y-2 lg:flex lg:justify-between lg:text-left mb-24">
-          <div className="grid lg:w-1/2 ">
+          <div className="grid col-span-1 space-y-10 lg:w-1/2 ">
             <div className="">
               <h1 className="text-4xl font-extrabold ">Let's Collab!</h1>
               <p className="text-xl">grandonleebarcia@gmail.com</p>
@@ -268,7 +268,7 @@ export default function Home() {
                   Find Me
                 </p>
                 <div className="flex justify-evenly lg:w-1/2 ">
-                  <a href="https://www.google.com" target="_blank">
+                  <a href="https://github.com/grandonbarcia" target="_blank">
                     <AiFillGithub size={32} className="hover:text-green-700" />
                   </a>
                   <a
@@ -291,9 +291,7 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:w-1/3">
-            <div className="  mx-auto max-w-screen-md">
-              <Contact />
-            </div>
+            <Contact />
           </div>
         </section>
       </div>
