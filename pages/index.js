@@ -124,7 +124,9 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
               <div>
                 <h1 className="text-5xl font-extrabold pb-3">Kanban Board</h1>
-                <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
+                <p className="text-lg">
+                  Tech Stack: Next.JS, Tailwind, React DnD
+                </p>
               </div>
               <p className="text-xl pb-5 leading-relaxed w-full xl:w-3/4">
                 A kanban board is one of the tools that can be used to implement
@@ -167,7 +169,7 @@ export default function Home() {
               <h1 className="text-5xl font-extrabold pb-3">
                 Password Generator
               </h1>
-              <p className="text-lg ">Tech Stack: Next.JS, Tailwind, Heroku</p>
+              <p className="text-lg ">Tech Stack: Next.JS, Tailwind, </p>
             </div>
             <p className="text-xl pb-5 leading-relaxed w-full xl:w-3/4">
               A random password generator is software program or hardware device
@@ -214,7 +216,7 @@ export default function Home() {
             <div className="grid grid-cols-1 gap-4 w-full xl:ml-20  xl:w-1/2">
               <div>
                 <h1 className="text-5xl font-extrabold pb-3">Memory Game</h1>
-                <p className="text-lg">Tech Stack: Next.JS, Tailwind, Heroku</p>
+                <p className="text-lg">Tech Stack: Next.JS, Tailwind, </p>
               </div>
               <p className="text-xl pb-5 leading-relaxed w-full xl:w-3/4">
                 A fun memory game where users can test their memory skills with
