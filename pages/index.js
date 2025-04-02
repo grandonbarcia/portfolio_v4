@@ -80,6 +80,17 @@ export default function Home() {
               technologies. Passionate about tech, learning new things, and
               growing as a developer.
             </p>
+            <div className="flex justify-center lg:justify-start">
+              <a href="https://github.com/grandonbarcia" target="_blank">
+                <AiFillGithub size={32} className="hover:text-green-700" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/brandon-garcia-54708516b/"
+                target="_blank"
+              >
+                <AiFillLinkedin size={32} className="hover:text-cyan-700" />
+              </a>
+            </div>
           </div>
         </section>
         <section className="relative flex justify-between  ">
