@@ -37,23 +37,6 @@ export default function Home() {
 
       <nav className="py-10 mb-12 flex justify-between">
         <h1 className="text-2xl font-bold">brandonGarcia</h1>
-        <ul className="flex items-center">
-          <li>
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener"
-              noreferrer="true"
-              className="relative inline-block px-4 py-2 font-medium group"
-            >
-              <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
-              <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
-              <span className="relative text-black group-hover:text-white">
-                Resume
-              </span>
-            </a>
-          </li>
-        </ul>
       </nav>
       <div className="grid col-span-1 space-y-32 md:mx-24 ">
         <section className="grid col-span-1 space-y-5 lg:col-span-0 lg:space-y-0 lg:flex">
@@ -80,7 +63,7 @@ export default function Home() {
               technologies. Passionate about tech, learning new things, and
               growing as a developer.
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-center items-center lg:justify-start">
               <a href="https://github.com/grandonbarcia" target="_blank">
                 <AiFillGithub size={32} className="hover:text-green-700" />
               </a>
@@ -90,7 +73,21 @@ export default function Home() {
               >
                 <AiFillLinkedin size={32} className="hover:text-cyan-700" />
               </a>
+              <a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener"
+                noreferrer="true"
+                className="relative inline-block px-4 py-2 font-medium group"
+              >
+                <span className="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 bg-black group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
+                <span className="absolute inset-0 w-full h-full bg-white border-2 border-black group-hover:bg-black"></span>
+                <span className="relative text-black group-hover:text-white">
+                  Resume
+                </span>
+              </a>
             </div>
+            <div></div>
           </div>
         </section>
         <section className="relative flex justify-between  ">
