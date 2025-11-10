@@ -74,7 +74,7 @@ export default function Home() {
                 <AiFillLinkedin size={32} className="hover:text-cyan-700" />
               </a>
               <a
-                href="/resume.pdf"
+                href="/Brandon_Garcia_Resume.pdf"
                 target="_blank"
                 rel="noopener"
                 noreferrer="true"
